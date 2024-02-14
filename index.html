@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitter Clone Html Css Js Tailwinds</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-black">
+    <div class="flex container mx-auto gap-0 text-white bg-black font-bold scroll-m-0">
+      <div class=" h-full flex flex-col mr-10 items-end  md:w-full">
+        <div class="m-100 mt-3">
+          <img class="w-12 mt-3 mr-0 md:mr-36" src="./src/twitter.webp " />
+        </div>
+        <div class="flex flex-col gap-6">
+          <div class="flex gap-3 items-center mt-5  bg-black p-2 hover:bg-gray-800 hover:rounded-full hover:p-2 cursor-pointer ">
+            <i class="bx bx-home text-white text-3xl"></i>
+            <h4 w-3 class="text-white text-2xl hidden md:block">Home</h4>
+          </div>
+          <div class="flex gap-3 items-center  bg-black p-2 hover:bg-gray-800 hover:rounded-full hover:p-2 cursor-pointer">
+            <i class="bx bx-search-alt-2 text-white text-3xl"></i>
+            <h4 w-3 class="text-white text-2xl hidden md:block">Explores</h4>
+          </div>
+          <div class="flex gap-3 items-center bg-black p-2 hover:bg-gray-800 hover:rounded-full hover:p-2 cursor-pointer">
+            <i class="bx bx-bell text-white text-3xl "></i>
+            <h4 w-3 class="text-white text-2xl hidden md:block">
+              Notifications
+            </h4>
+          </div>
+          <div class="flex gap-3 items-center bg-black p-2 hover:bg-gray-800 hover:rounded-full hover:p-2 cursor-pointer">
+            <i class="bx bx-message-alt-detail text-white text-3xl"></i>
+            <h4 w-3 class="text-white text-2xl hidden md:block">Grok</h4>
+          </div>
+          <div class="flex gap-3 items-center bg-black p-2 hover:bg-gray-800 hover:rounded-full hover:p-2 cursor-pointer">
+            <i class="bx bx-bookmarks text-white text-3xl"></i>
+            <h4 w-3 class="text-white text-2xl hidden md:block">Bookmarks</h4>
+          </div>
+          <div class="flex gap-3 items-center bg-black p-2 hover:bg-gray-800 hover:rounded-full hover:p-2 cursor-pointer">
+            <i class="bx bx-user-voice text-white text-3xl"></i>
+            <h4 w-3 class="text-white text-2xl hidden md:block">Comminites</h4>
+          </div>
+          <div class="flex gap-3 items-center bg-black p-2 hover:bg-gray-800 hover:rounded-full hover:p-2 cursor-pointer">
+            <i class="bx bx-hard-hat text-white text-3xl"></i>
+            <h4 w-3 class="text-white text-2xl hidden md:block">Premium</h4>
+          </div>
+          <div class="flex gap-3 items-center bg-black p-2 hover:bg-gray-800 hover:rounded-full hover:p-2 cursor-pointer">
+            <i class="bx bx-user text-white text-3xl"></i>
+            <h4 w-3 class="text-white text-2xl hidden md:block">Profile</h4>
+          </div>
+          <div class="flex gap-3 items-center bg-black p-2 hover:bg-gray-800 hover:rounded-full hover:p-2 cursor-pointer">
+            <i class="bx bx-dots-horizontal-rounded text-white text-3xl"></i>
+            <h4 w-3 class="text-white text-2xl hidden md:block">More</h4>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Middle Part -->
+      <div class="w-[100%]  h-full border-x-white border-x-[0.5px]">
+        <div
+          class="w-full flex mt-2 p-4 items-center justify-center gap:0  border-b-[1px] relative"
+        >
+          <h5 class="text-1xl ml-5 items-center w-full text-center">For You</h4>
+          <h5 class="text-1xl w-full items-center text-center">Following</h4>
+          <i class="bx bx-cog text-2xl"></i>
+          <div
+            class="absolute w-12 h-1 rounded-sm bottom-0 left-[24%] bg-blue-400"
+          ></div>
+        </div>
+        <div class="flex gap-2 justify-center p-2 md:gap-4">
+          <div class="flex  gap-4 ">
+            <img class="w-20 h-16 rounded-full ml-2 mt-4" src="./src/profile.jpg" />
+          </div>
+          <div class="right w-full border-bottom-2">
+            <input
+              class="bg-black p-3 text-xl border-none outline-none"
+              type="text"
+              placeholder="What is happening?!"
+            />
+            <div class="w-full  items-center flex gap-2 text-blue-400 border-b-[1px] p-3">
+              <i class='bx bx-world text-2xl'></i>
+              <h4>Everyone can reply</h4>
+            </div>
+            <div class="flex w-full justify-between gap-0 p-1 mt-3">
+              <div class=" flex gap-1 icons text-blue-400 text-[1em] md:text-[1.4em]">
+                <i class='bx bx-photo-album' ></i>
+                <i class='bx bxs-file-gif' ></i>
+                <i class='bx bx-credit-card-front'></i>
+                <i class='bx bx-smile'></i>
+                <i class='bx bxs-calendar' ></i>
+                <i class='bx bx-location-plus' ></i>
+              </div>
+              <button class="bg-blue-400 px-5 py-[0.03em] ml-24 rounded-2xl md:px-4 md:py-[0.1em]">
+                Post
+              </button>
+            </div>
+          
+          </div>
+        
+        </div>
+        <hr>
+        <div class="p-4 ml-2">
+          <div class="flex gap-4 items-center">
+            <img class="rounded-full w-9 " src="./src/elon.jpg">
+            <div class="flex">
+              <h4>Elon Musk</h4>
+              <p class="text-gray-600 ml-2">@elonmusk</p>
+              <p class="text-gray-600 ml-2">~6h</p>
+            </div>
+           
+          </div>
+          <P class="ml-12">I spent $44 billion for this app and now Lizard boy just decided to hit copy and paste. It’s personal now. See you in the cage, Zuck.</P>
+          <div class="flex justify-around text-gray-600 ml-8 mt-5">
+              <i class='bx bx-message text-[1.3em] max-w-none flex text-center items-center justify-center cursor-pointer hover:text-blue-500 '><span >1k</span>
+            </i>
+            <i class='bx bx-repost text-[1.3em] max-w-none flex text-center items-center justify-center cursor-pointer hover:text-green-500 '><span >1k</span>
+            </i>
+            <i class='bx bx-heart text-[1.3em] max-w-none flex text-center items-center justify-center cursor-pointer hover:text-red-500 '><span >1k</span>
+            </i>
+            <i class='bx bx-bar-chart-alt-2 text-[1.3em] max-w-none flex text-center items-center justify-center cursor-pointer hover:text-blue-500 '><span >1k</span>
+            </i>
+            
+          </div>
+         
+          
+        </div>
+        <hr>
+        <div class="p-4 ml-2">
+        <div class="flex gap-4 items-center">
+          <img class="rounded-full w-9 " src="./src/girl.jpg">
+          <div class="flex">
+            <h4>Techno Nb</h4>
+            <p class="text-gray-600 ml-2">@technonb</p>
+            <p class="text-gray-600 ml-2">~10h</p>
+          </div>
+         </div>
+         <p class="ml-12  font-light">Living Legend</p>
+         <img class="ml-12 w-5/6 mt-2 rounded-2xl" src="./src/meme.jpg">
+
+         <div class="flex justify-around text-gray-600 ml-8 mt-5">
+          <i class='bx bx-message text-[1.3em] max-w-none flex text-center items-center justify-center cursor-pointer hover:text-blue-500 '><span >1k</span>
+        </i>
+        <i class='bx bx-repost text-[1.3em] max-w-none flex text-center items-center justify-center cursor-pointer hover:text-green-500 '><span >1k</span>
+        </i>
+        <i class='bx bx-heart text-[1.3em] max-w-none flex text-center items-center justify-center cursor-pointer hover:text-red-500 '><span >1k</span>
+        </i>
+        <i class='bx bx-bar-chart-alt-2 text-[1.3em] max-w-none flex text-center items-center justify-center cursor-pointer hover:text-blue-500 '><span >1k</span>
+        </i>
+         </div>
+      </div>
+
+
+      <div class="p-4 ml-2">
+        <div class="flex gap-4 items-center">
+          <img class="rounded-full w-9 " src="./src/cartton.png">
+          <div class="flex">
+            <h4>non aesthetic things</h4>
+            <p class="text-gray-600 ml-2">@CodeMeme</p>
+            <p class="text-gray-600 ml-2">~2h</p>
+          </div>
+         </div>
+         <p class="ml-12  font-light">This is amazing coding meme</p>
+         <img class="ml-12 w-2/3 mt-2 rounded-2xl" src="./src/coding.jpg">
+
+         <div class="flex gap-10  text-gray-600 ml-14 mt-5">
+          <i class='bx bx-message text-[1.3em] max-w-none flex text-center items-center justify-center cursor-pointer hover:text-blue-500 '><span >1k</span>
+        </i>
+        <i class='bx bx-repost text-[1.3em] max-w-none flex text-center items-center justify-center cursor-pointer hover:text-green-500 '><span >1k</span>
+        </i>
+        <i class='bx bx-heart text-[1.3em] max-w-none flex text-center items-center justify-center cursor-pointer hover:text-red-500 '><span >1k</span>
+        </i>
+        <i class='bx bx-bar-chart-alt-2 text-[1.3em] max-w-none flex text-center items-center justify-center cursor-pointer hover:text-blue-500 '><span >1k</span>
+        </i>
+         </div>
+      </div>
+
+
+      <div class="p-4 ml-2">
+        <div class="flex gap-4 items-center">
+          <img class="rounded-full w-9 " src="./src/girl.jpg">
+          <div class="flex">
+            <h4>Techno Nb</h4>
+            <p class="text-gray-600 ml-2">@technonb</p>
+            <p class="text-gray-600 ml-2">~10h</p>
+          </div>
+         </div>
+         <p class="ml-12  font-light">Living Legend</p>
+         <img class="ml-12 w-5/6 mt-2 rounded-2xl" src="./src/meme.jpg">
+
+         <div class="flex justify-around text-gray-600 ml-8 mt-5">
+          <i class='bx bx-message text-[1.3em] max-w-none flex text-center items-center justify-center cursor-pointer hover:text-blue-500 '><span >1k</span>
+        </i>
+        <i class='bx bx-repost text-[1.3em] max-w-none flex text-center items-center justify-center cursor-pointer hover:text-green-500 '><span >1k</span>
+        </i>
+        <i class='bx bx-heart text-[1.3em] max-w-none flex text-center items-center justify-center cursor-pointer hover:text-red-500 '><span >1k</span>
+        </i>
+        <i class='bx bx-bar-chart-alt-2 text-[1.3em] max-w-none flex text-center items-center justify-center cursor-pointer hover:text-blue-500 '><span >1k</span>
+        </i>
+         </div>
+      </div>
+
+    
+      </div>
+
+      <!-- last part -->
+      <div class="w-[100%] h-full  hidden md:block">
+        <div class="mt-5 ml-5 h-full">
+        <input class="rounded-full  bg-[#16181c] py-2 px-2 text-white " type="search" placeholder="Search">
+        <div class="h-[90%] w-[50%] mt-4 bg-[#16181c] rounded-e-2xl ">
+          <h1 class="mt-4 ml-5">Whats happening</h1>
+          <div class=" mt-5 ml-2 w-full p-2 hover:bg-gray-800  cursor-pointer">
+            <p>Treding</p>
+            <h6>#Orry</h6>
+            <p>46.5k Posts</p>
+          </div>
+
+          <div class=" mt-5 ml-2 w-full p-2 hover:bg-gray-800 cursor-pointer">
+            <p>Treding</p>
+            <h6>#Orry</h6>
+            <p>46.5k Posts</p>
+          </div>
+
+          <div class=" mt-5 ml-2 w-full p-2 hover:bg-gray-800 cursor-pointer">
+            <p>Treding</p>
+            <h6>#Orry</h6>
+            <p>46.5k Posts</p>
+          </div>
+
+          <div class=" mt-5 ml-2 w-full p-2 hover:bg-gray-800 cursor-pointer">
+            <p>Treding</p>
+            <h6>#Orry</h6>
+            <p>46.5k Posts</p>
+          </div>
+        </div>
+        <div class="bg-[#16181c] rounded-e-2xl w-[50%] mt-4">
+            <h1 class="mt-4 ml-5">Who To Follow</h1>
+            <div class="flex items-center justify-evenly w-full p-2 hover:bg-gray-800 mt-4 cursor-pointer">
+                <img class="z-0 w-14" src="./src/vercel.jpg">
+                <div class=''>
+                  <h3>Vercel</h3>
+                  <p class="text-gray-400">@vercel</p>
+                </div>
+               <button class="bg-white text-black px-2 py-2 rounded-full">Follow</button>
+            </div>
+
+            <div class="flex items-center justify-evenly w-full p-2 hover:bg-gray-800 mt-4 cursor-pointer">
+              <img class="z-0 w-14" src="./src/react.png">
+              <div class=''>
+                <h3>React</h3>
+                <p class="text-gray-400">@react</p>
+              </div>
+             <button class="bg-white text-black px-2 py-2 rounded-full">Follow</button>
+          </div>
+
+          <div class="flex items-center justify-evenly w-full p-2 hover:bg-gray-800 mt-4 cursor-pointer">
+            <img class="z-0 w-14" src="./src/girl.jpg">
+            <div class=''>
+              <h3>Ban.js</h3>
+              <p class="text-gray-400">@banjs</p>
+            </div>
+           <button class="bg-white text-black px-2 py-2 rounded-full">Follow</button>
+        </div>
+        <p class="ml-5 text-gray-800">Terms of Service <span>Privacy Policy</span></p>
+        <a class="ml-5 text-blue-600 hover:underline" href="#">Show More</a>
+        </div>
+        
+      </div>
+      </div>
+    </div>
+  </body>
+</html>
